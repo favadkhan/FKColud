@@ -1,4 +1,8 @@
-FROM ubuntu:12.04
+
+FROM docker/whalesay:latest
+
+COPY apt.conf /etc/apt/  
+
 
 # Install dependencies
 RUN apt-get update -y
